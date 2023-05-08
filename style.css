@@ -36,16 +36,18 @@ header {
   background-color: #fff;
   padding: 15px 0;
   border-bottom: 1px solid #eaeaea;
-  height: 74px;
+  height: 55px;
   width: 100%;
-  border: 1px solid red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 header > div {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: 1px solid red;
+  width: 1000px;
 }
 
 .menu-btn {
@@ -53,11 +55,11 @@ header > div {
   justify-content: center;
   align-items: center;
   display: flex;
-  height: 40px;
+  height: 39px;
   width: 86px;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
-  border: 1px solid #005ea6;
+  border: 1px solid #0070ba;
   border-radius: 25px;
   background-color: white;
 }
@@ -65,13 +67,15 @@ header > div {
 .hamburger-menu {
   width: 13px;
   height: 1px;
-  background-color: #005ea6;
+  background-color: #0070ba;
   border-radius: 4px;
   transition: all 0.3s ease-in-out;
   text-indent: 20px;
   line-height: 0.1;
   transform: translateX(-20px);
-  color: #005ea6;
+  color: #0070ba;
+  font-size: 0.78rem;
+  font-weight: bold;
 }
 .hamburger-menu::before,
 .hamburger-menu::after {
@@ -80,7 +84,7 @@ header > div {
   width: 13px;
   height: 1px;
   border-radius: 4px;
-  background-color: #005ea6;
+  background-color: #0070ba;
   transition: all 0.3s ease-in-out;
   left: 0;
 }
@@ -110,20 +114,20 @@ header > div {
 .logo {
   display: flex;
   align-items: center;
-  height: 55px;
+  height: 40px;
 }
 
 .logo a {
   background: transparent
     url(https://www.paypalobjects.com/digitalassets/c/website/logo/full-text/pp_fc_hl.svg)
     center center no-repeat;
-  width: 136px;
-  height: 43px;
+  width: 28px;
+  height: 30px;
   display: inline-block;
   text-indent: -9999px;
   overflow: hidden;
   background-position: 0 50%;
-  background-size: contain;
+  background-size: cover;
   background-clip: border-box;
   padding: 0;
   background-origin: border-box;
@@ -138,12 +142,7 @@ nav > ul {
   justify-content: space-between;
   align-items: center;
   list-style: none;
-  border: 1px solid red;
 }
-
-/* nav > ul > li {
-  margin-left: 20px;
-} */
 
 .nav-link {
   text-decoration: none;
@@ -165,11 +164,10 @@ nav > ul {
   margin-left: 8px;
   text-decoration: none;
   font-weight: 600;
-  font-size: 0.8rem;
+  font-size: 0.78rem;
   text-transform: capitalize;
   position: relative;
-  letter-spacing: 1px;
-  padding: 12px 24px;
+  padding: 10px 24px;
   border-radius: 1.8rem;
   transition: all 0.3s ease-in-out;
 }
@@ -189,16 +187,31 @@ nav > ul {
 }
 
 @media screen and (min-width: 1152px) {
+  .container {
+    max-width: 1192px;
+  }
   .nav-link {
     padding: 25px 15px 23px 15px;
     margin: 0 1px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .container {
+    padding: 0 48px;
+    max-width: 1151px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .container {
     padding: 0;
-    max-width: 720px;
+    max-width: 1023px;
+  }
+}
+@media screen and (min-width: 576px) {
+  .container {
+    padding: 0 36px;
+    /* max-width: 850px; */
   }
 }
 
@@ -207,10 +220,31 @@ nav > ul {
     padding: 0;
     max-width: 960px;
   }
+  header {
+    height: 76px;
+    display: block;
+  }
   nav {
     display: initial;
   }
   .signup {
     display: initial;
+  }
+  .menu-btn {
+    display: none;
+    height: 40px;
+  }
+  .logo {
+    height: 55px;
+  }
+  .logo a {
+    width: 136px;
+    height: 46px;
+    background-size: contain;
+  }
+  .btn > a {
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    padding: 12px 24px;
   }
 }
