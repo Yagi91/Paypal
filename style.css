@@ -1,0 +1,216 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --light-blue: #169bd7;
+  --paypal-blue: #253b80;
+  --dark-blue: #222d65;
+}
+
+@font-face {
+  font-family: "PayPalSansReg";
+  src: url("assets\fonts\paypal-sans-font\others\PayPal.ttf") format("truetype");
+}
+
+body {
+  font-family: "PayPalSansReg", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: #fff;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+header {
+  background-color: #fff;
+  padding: 15px 0;
+  border-bottom: 1px solid #eaeaea;
+  height: 74px;
+  width: 100%;
+  border: 1px solid red;
+}
+
+header > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid red;
+}
+
+.menu-btn {
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  height: 40px;
+  width: 86px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  border: 1px solid #005ea6;
+  border-radius: 25px;
+  background-color: white;
+}
+
+.hamburger-menu {
+  width: 13px;
+  height: 1px;
+  background-color: #005ea6;
+  border-radius: 4px;
+  transition: all 0.3s ease-in-out;
+  text-indent: 20px;
+  line-height: 0.1;
+  transform: translateX(-20px);
+  color: #005ea6;
+}
+.hamburger-menu::before,
+.hamburger-menu::after {
+  content: "";
+  position: absolute;
+  width: 13px;
+  height: 1px;
+  border-radius: 4px;
+  background-color: #005ea6;
+  transition: all 0.3s ease-in-out;
+  left: 0;
+}
+.hamburger-menu::before {
+  transform: translateY(-5px);
+}
+.hamburger-menu::after {
+  transform: translateY(5px);
+}
+
+.menu-btn.open .hamburger-menu {
+  background-color: transparent;
+}
+
+.menu-btn.open .hamburger-menu::before {
+  transform: rotate(227deg) translateY(0px);
+}
+
+.menu-btn.open .hamburger-menu::after {
+  transform: rotate(-225deg) translateY(1px);
+}
+
+.menu-btn:focus .hamburger-menu {
+  text-decoration: underline;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  height: 55px;
+}
+
+.logo a {
+  background: transparent
+    url(https://www.paypalobjects.com/digitalassets/c/website/logo/full-text/pp_fc_hl.svg)
+    center center no-repeat;
+  width: 136px;
+  height: 43px;
+  display: inline-block;
+  text-indent: -9999px;
+  overflow: hidden;
+  background-position: 0 50%;
+  background-size: contain;
+  background-clip: border-box;
+  padding: 0;
+  background-origin: border-box;
+}
+
+nav {
+  display: none;
+}
+
+nav > ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  border: 1px solid red;
+}
+
+/* nav > ul > li {
+  margin-left: 20px;
+} */
+
+.nav-link {
+  text-decoration: none;
+  color: #2c2e2f;
+  font-weight: 600;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  position: relative;
+  letter-spacing: 1px;
+  line-height: 2.7;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn > a {
+  margin-left: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.8rem;
+  text-transform: capitalize;
+  position: relative;
+  letter-spacing: 1px;
+  padding: 12px 24px;
+  border-radius: 1.8rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.login {
+  color: #0070ba;
+  border: 1px solid #0070ba;
+  background-color: white;
+}
+.signup {
+  color: white;
+  background-color: #0070ba;
+  display: none;
+}
+.signup:hover {
+  background-color: #005ea6;
+}
+
+@media screen and (min-width: 1152px) {
+  .nav-link {
+    padding: 25px 15px 23px 15px;
+    margin: 0 1px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    padding: 0;
+    max-width: 720px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .container {
+    padding: 0;
+    max-width: 960px;
+  }
+  nav {
+    display: initial;
+  }
+  .signup {
+    display: initial;
+  }
+}
