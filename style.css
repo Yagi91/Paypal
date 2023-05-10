@@ -186,6 +186,103 @@ nav > ul {
   background-color: #005ea6;
 }
 
+/* Main*/
+
+/* Hero Section */
+
+.hero {
+  background-color: #fff;
+  height: 650px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero-content-container {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translate(-50%, 10px);
+  width: 100%;
+  text-align: center;
+  z-index: 1;
+  color: #fff;
+}
+.hero-content-container h1 {
+  font-size: 1.7rem;
+}
+.hero-content-container button {
+  margin-top: 20px;
+  cursor: pointer;
+  color: var(--paypal-blue);
+  width: 300px;
+  height: 50px;
+  border: none;
+  border-radius: 25px;
+}
+
+.hero .video-container {
+  /* height: 650px; */
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+  border: 3px solid peru;
+}
+
+.video-container > video {
+  min-width: 100%;
+  min-height: 100%;
+  border: 1px solid red;
+  position: absolute;
+  bottom: 0%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
+
+/* banner section */
+
+.banner {
+  background-color: #fff;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #02387b;
+  height: 150px;
+  padding: 5px 0;
+  gap: 10px;
+}
+.banner p {
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.banner button {
+  cursor: pointer;
+  color: var(--paypal-blue);
+  width: 150px;
+  height: 50px;
+  border: none;
+  border-radius: 25px;
+}
+
+@media screen and (min-width: 1720px) {
+  .hero {
+    border: 1px solid black;
+    height: 650px;
+  }
+}
+
 @media screen and (min-width: 1152px) {
   .container {
     max-width: 1192px;
@@ -194,7 +291,12 @@ nav > ul {
     padding: 25px 15px 23px 15px;
     margin: 0 1px;
   }
+  .hero {
+    border: 1px solid green;
+    height: 500px;
+  }
 }
+
 @media screen and (min-width: 1024px) {
   .container {
     padding: 0 48px;
@@ -206,6 +308,12 @@ nav > ul {
   .container {
     padding: 0;
     max-width: 1023px;
+  }
+  .hero-content-container {
+    width: 760px;
+  }
+  .hero-content-container h1 {
+    font-size: 2.2rem;
   }
 }
 @media screen and (min-width: 576px) {
@@ -246,5 +354,13 @@ nav > ul {
     font-size: 0.8rem;
     letter-spacing: 1px;
     padding: 12px 24px;
+  }
+  .hero-content-container {
+    top: 40px;
+    transform: translate(-50%, 40px);
+    width: 750px;
+  }
+  .hero-content-container h1 {
+    font-size: 2.3rem;
   }
 }
