@@ -16,7 +16,17 @@
 
 @font-face {
   font-family: "PayPalSansReg";
-  src: url("assets\fonts\paypal-sans-font\others\PayPal.ttf") format("truetype");
+  src: url("assets/fonts/paypal-sans-font/others/PayPal.ttf") format("truetype");
+}
+@font-face {
+  font-family: "PaypalSansSmall";
+  src: url("assets/fonts/paypal-sans-font/PayPalSansSmall-Medium-Klim.ttf")
+    format("truetype");
+}
+@font-face {
+  font-family: "PayPalSansBigLight";
+  src: url("assets/fonts/paypal-sans-font/PayPalSansBig-Light-Klim.ttf")
+    format("truetype");
 }
 
 body {
@@ -246,33 +256,46 @@ nav > ul {
 /* banner section */
 
 .banner {
+  font-family: PayPalSansBigLight, Arial, sans-serif;
   background-color: #fff;
-  height: 100%;
   width: 100%;
-  position: relative;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   background-color: #02387b;
-  height: 150px;
-  padding: 5px 0;
-  gap: 10px;
+  height: 160px;
+  padding: 10px 25px;
 }
-.banner p {
+.banner-p {
   color: #fff;
-  font-size: 1.2rem;
-  font-weight: 600;
+  font-size: 27px;
+  font-weight: 100;
   text-align: center;
+  margin: 0 0 20px 0;
+  line-height: 1.2;
+}
+
+/* mobile screen */
+@media screen and (max-width: 768px) {
+  .banner-p {
+    font-size: 20px;
+  }
+  .banner-p span {
+    display: none;
+  }
+  .banner {
+    height: 120px;
+  }
 }
 
 .banner button {
+  margin: 5px auto 5px auto;
+  display: block;
+  font-family: PayPalSansReg, Arial, sans-serif;
   cursor: pointer;
   color: var(--paypal-blue);
   width: 150px;
-  height: 50px;
+  height: 36px;
   border: none;
+  font-size: 12px;
+  font-weight: 600;
   border-radius: 25px;
 }
 
