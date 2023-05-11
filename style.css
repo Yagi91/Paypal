@@ -356,6 +356,45 @@ nav > ul {
   }
 }
 
+/* Module Tree */
+
+.module-tree {
+  background-color: #fff;
+  padding: 50px 0;
+  margin: 0 auto;
+}
+.module-tree > .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.module-tree > .container h2 {
+  color: #00a8ea;
+  font-size: 2.3rem;
+  font-weight: 100;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+.module-tree-image-container {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  align-items: center;
+  width: 100%;
+}
+.module-tree-image {
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+  .module-tree-image-container {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* gap: 5px; */
+  }
+}
+
 /* Responsive Screen  */
 @media screen and (max-width: 768px) {
   .banner-p {
