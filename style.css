@@ -394,6 +394,41 @@ nav > ul {
   }
 }
 
+/* Pullout */
+
+.pullout {
+  background-color: #00a8ea;
+  padding: 30px 0;
+  border: 1px solid black;
+}
+.pullout > .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.pullout-content p {
+  color: #fff;
+  font-size: 2.2rem;
+  font-weight: 100;
+  margin-bottom: 20px;
+  line-height: 1.2;
+  text-align: center;
+}
+.pullout > .container button {
+  color: #0d3685;
+  cursor: pointer;
+  width: 300px;
+  outline: none;
+  font-size: 0.9375rem;
+  padding: 12px 0;
+  border: 1px solid #fff;
+  border-radius: 25px;
+  background-color: white;
+  font-weight: bolder;
+  font-family: PayPalSansSmall, Arial, sans-serif;
+}
+
 /* Responsive Screen  */
 @media screen and (max-width: 768px) {
   .banner-p {
