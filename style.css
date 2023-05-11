@@ -272,7 +272,91 @@ nav > ul {
   line-height: 1.2;
 }
 
-/* mobile screen */
+/* Editorial */
+.editorial-section {
+  background-color: #fff;
+  padding: 50px 0;
+}
+.editorial {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+  min-height: 350px;
+}
+.editorial-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 50%;
+  height: 100%;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.editorial-content h2 {
+  color: #00a8ea;
+  font-size: 2.3rem;
+  font-weight: 100;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+.editorial-content p {
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: normal;
+  font-family: PayPalSansBigLight, Arial, sans-serif;
+  margin-bottom: 20px;
+}
+.editorial-content button {
+  color: #0070ba;
+  cursor: pointer;
+  width: 300px;
+  outline: none;
+  font-size: 0.9375rem;
+  padding: 12px 0;
+  border: 1px solid #0070ba;
+  border-radius: 25px;
+  background-color: white;
+  font-weight: bolder;
+  font-family: PayPalSansSmall, Arial, sans-serif;
+}
+.editorial-image {
+  width: 350px;
+  max-height: 350px;
+  overflow: hidden;
+  padding: 20px;
+}
+.editorial-image img {
+  max-width: 90%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 768px) {
+  .editorial-section {
+    padding: 0;
+  }
+  .editorial {
+    flex-direction: column;
+  }
+  .editorial-content {
+    width: 350px;
+    height: 350px;
+    padding: 0;
+    align-items: center;
+  }
+  .editorial-image {
+    max-width: 90%;
+    max-height: 350px;
+  }
+}
+
+/* Responsive Screen  */
 @media screen and (max-width: 768px) {
   .banner-p {
     font-size: 20px;
