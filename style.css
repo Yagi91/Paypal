@@ -553,6 +553,7 @@ ul.footer-nav li:hover {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin-bottom: 20px;
 }
 .footer-legal-policies {
   display: flex;
@@ -614,6 +615,35 @@ ul.footer-nav li:hover {
     font-size: 0.8125rem;
   }
   .footer-legal > p {
+    text-align: left;
+  }
+}
+/* Disclaimer */
+.footer-disclaimer {
+  margin-bottom: 50px;
+}
+
+.footer-disclaimer p {
+  font-size: 0.8525rem;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: center;
+  margin: 5px 0;
+}
+.footer-disclaimer p a {
+  color: #0070ba;
+  text-decoration: none;
+  cursor: pointer;
+}
+.footer-disclaimer p a:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 730px) {
+  .footer-disclaimer {
+    margin-bottom: 20px;
+  }
+  .footer-disclaimer p {
     text-align: left;
   }
 }
