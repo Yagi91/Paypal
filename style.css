@@ -578,6 +578,22 @@ ul.footer-nav li:hover {
   text-decoration: underline;
   cursor: pointer;
 }
+.footer-legal > p {
+  margin: 5px 0;
+  width: 100%;
+  text-align: center;
+  font-weight: 400;
+  font-size: 0.8525rem;
+  line-height: 1.5;
+}
+.footer-legal > p a {
+  color: #0070ba;
+  text-decoration: none;
+  cursor: pointer;
+}
+.footer-legal > p a:hover {
+  text-decoration: underline;
+}
 
 @media screen and (max-width: 1133px) {
   .footer-legal-policies {
@@ -596,6 +612,9 @@ ul.footer-nav li:hover {
   }
   .footer-legal-policies > ul li {
     font-size: 0.8125rem;
+  }
+  .footer-legal > p {
+    text-align: left;
   }
 }
 
