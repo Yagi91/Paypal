@@ -1,4 +1,5 @@
 # Paypal
+
 A clone of PayPal India's UI.
 ![image](https://github.com/Yagi91/Paypal/assets/84844806/ecc7a2b9-9067-48ba-a8c6-f4efc46b7a17)
 
@@ -8,18 +9,18 @@ This is a Paypal India clone frontpage UI created with HTML, CSS, and Javascript
 
 ## Features
 
-* Sign in and sign up forms
-* Home page with a list of payments
-* Payment details page
-* Payment confirmation page
+- Sign in and sign up forms
+- Home page with a list of payments
+- Payment details page
+- Payment confirmation page
 
 ## Technologies
 
-* HTML
-* CSS
-* Javascript
-* Bootstrap
-* Font Awesome
+- HTML
+- CSS
+- Javascript
+- Bootstrap
+- Font Awesome
 
 ## How to use
 
