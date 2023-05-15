@@ -42,22 +42,23 @@ body {
   padding: 0 15px;
 }
 
+/* Header */
+
 header {
   background-color: #fff;
-  padding: 15px 0;
-  border-bottom: 1px solid #eaeaea;
   height: 55px;
   width: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
 }
 
 header > div {
   display: flex;
+  width: 100%;
   justify-content: space-between;
-  align-items: center;
-  width: 1000px;
+  align-items: flex-start;
+  height: 53.8px;
 }
 
 .menu-btn {
@@ -144,7 +145,7 @@ header > div {
 }
 
 nav {
-  display: none;
+  height: 100%;
 }
 
 nav > ul {
@@ -153,6 +154,16 @@ nav > ul {
   align-items: center;
   list-style: none;
 }
+nav > ul > li {
+  padding: 1px 15px 10px 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav > ul > li:hover {
+  box-shadow: 0 5px 0 #0070ba;
+}
 
 .nav-link {
   text-decoration: none;
@@ -160,9 +171,18 @@ nav > ul {
   font-weight: 600;
   font-size: 0.875rem;
   text-transform: uppercase;
-  position: relative;
   letter-spacing: 1px;
   line-height: 2.7;
+}
+
+.down-arrow {
+  margin-left: 4px;
+  width: 15px;
+  height: 15px;
+  transition: transform 0.2s ease-in-out;
+}
+.nav > ul > li:hover > .down-arrow {
+  transform: rotate(-180deg);
 }
 
 .btn {
@@ -194,6 +214,12 @@ nav > ul {
 }
 .signup:hover {
   background-color: #005ea6;
+}
+
+@media screen and (max-width: 1150px) {
+  nav {
+    display: none;
+  }
 }
 
 /* Main*/
@@ -712,23 +738,13 @@ ul.footer-nav li:hover {
 
 /* Responsive Screen  */
 
-@media screen and (min-width: 1720px) {
-  /* .hero {
-    height: 650px;
-  } */
-}
-
 @media screen and (min-width: 1152px) {
   .container {
     max-width: 1192px;
   }
-  .nav-link {
+  /* .nav-link {
     padding: 25px 15px 23px 15px;
     margin: 0 1px;
-  }
-  /* .hero {
-    border: 1px solid green;
-    height: 500px;
   } */
 }
 
@@ -744,17 +760,10 @@ ul.footer-nav li:hover {
     padding: 0;
     max-width: 1023px;
   }
-  /* .hero-content-container {
-    width: 760px;
-  }
-  .hero-content-container h1 {
-    font-size: 2.2rem;
-  } */
 }
 @media screen and (min-width: 576px) {
   .container {
     padding: 0 36px;
-    /* max-width: 850px; */
   }
 }
 
@@ -765,11 +774,11 @@ ul.footer-nav li:hover {
   }
   header {
     height: 76px;
-    display: block;
+    /* display: block; */
   }
-  nav {
+  /* nav {
     display: initial;
-  }
+  } */
   .signup {
     display: initial;
   }
@@ -790,12 +799,4 @@ ul.footer-nav li:hover {
     letter-spacing: 1px;
     padding: 12px 24px;
   }
-  /* .hero-content-container {
-    top: 40px;
-    transform: translate(-50%, 40px);
-    width: 750px;
-  }
-  .hero-content-container h1 {
-    font-size: 2.3rem;
-  } */
 }
