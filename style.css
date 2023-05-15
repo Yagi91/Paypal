@@ -200,48 +200,41 @@ nav > ul {
 /* Hero Section */
 
 .hero {
-  /* background-color: #fff;
-  height: 650px;
-  width: 100%;
-  position: relative;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center; */
   width: 100%;
   height: 650px;
   overflow: hidden;
   position: relative;
 }
 .hero-content-container {
-  /* position: absolute;
-  top: 10px;
-  left: 50%;
-  transform: translate(-50%, 10px);
-  width: 100%;
-  text-align: center;
-  z-index: 1;
-  color: #fff; */
+  width: 750px;
+  color: #fff;
+  margin: 70px auto;
+  padding: 0 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
 }
 .hero-content-container h1 {
-  /* font-size: 1.7rem; */
+  font-size: 2.5rem;
+  font-family: PayPalSansBigLight, Helvetica, Arial, sans-serif;
+  line-height: 1.2;
+  text-align: center;
 }
 .hero-content-container button {
-  /* margin-top: 20px;
-  cursor: pointer;
-  color: var(--paypal-blue);
-  width: 300px;
-  height: 50px;
+  width: 315px;
+  height: 48px;
   border: none;
-  border-radius: 25px; */
+  border-radius: 25px;
+  cursor: pointer;
+  color: #0d3685;
+  background-color: white;
+  font-weight: bolder;
+  font-size: 0.88rem;
 }
 
 .hero .video-container {
-  /* height: 100%;
-  width: 100%;
-  overflow: hidden;
-  width: 100%;
-  position: relative; */
   position: absolute;
   top: 0;
   bottom: 0;
@@ -249,16 +242,10 @@ nav > ul {
   height: 100%;
   overflow: hidden;
   background-color: #00a6e4;
+  z-index: -1;
 }
 
 .video-container > video {
-  /* min-width: 100%;
-  min-height: 100%;
-  position: absolute;
-  bottom: 0%;
-  left: 50%;
-  transform: translate(-50%, 0%); */
-  /* Make video to at least 100% wide and tall */
   width: 100%;
   height: auto;
   position: absolute;
@@ -273,19 +260,57 @@ nav > ul {
     height: 600px;
   }
 }
+
 @media screen and (max-width: 1335px) {
   .hero {
     height: 550px;
   }
 }
+
+@media screen and (max-width: 1050px) {
+  .hero-content-container {
+    width: auto;
+    max-width: 90%;
+  }
+  .hero-content-container h1 {
+    font-size: 2.4rem;
+    line-height: 1.1;
+  }
+}
+@media screen and (max-width: 750px) {
+  .hero-content-container {
+    width: auto;
+    max-width: 93%;
+    margin: 45px auto;
+  }
+  .hero-content-container h1 {
+    font-size: 1.8rem;
+    line-height: 1;
+  }
+}
+
 @media screen and (max-width: 727px) {
   .hero {
     height: 350px;
   }
+  .hero-content-container h1 {
+    font-size: 1.5rem;
+    line-height: normal;
+  }
 }
+
 @media screen and (max-width: 470px) {
   .hero {
     height: 540px;
+  }
+}
+@media screen and (max-width: 350px) {
+  .hero-content-container button {
+    width: initial;
+    max-width: 100%;
+    padding: 0 20px;
+    height: 30px;
+    font-size: 0.78rem;
   }
 }
 
