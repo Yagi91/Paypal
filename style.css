@@ -46,7 +46,7 @@ body {
 
 header {
   background-color: #fff;
-  height: 55px;
+  height: 76px;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -65,8 +65,8 @@ header > div {
   position: relative;
   justify-content: center;
   align-items: center;
-  display: flex;
-  height: 39px;
+  display: none;
+  height: 40px;
   width: 86px;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
@@ -125,20 +125,24 @@ header > div {
 .logo {
   display: flex;
   align-items: center;
-  height: 40px;
+  height: 55px;
+  /* height: 40px; */
 }
 
 .logo a {
   background: transparent
     url(https://www.paypalobjects.com/digitalassets/c/website/logo/full-text/pp_fc_hl.svg)
     center center no-repeat;
-  width: 28px;
-  height: 30px;
+  width: 136px;
+  height: 46px;
+  /* width: 28px; */
+  /* height: 30px; */
   display: inline-block;
   text-indent: -9999px;
   overflow: hidden;
   background-position: 0 50%;
-  background-size: cover;
+  background-size: contain;
+  /* background-size: cover; */
   background-clip: border-box;
   padding: 0;
   background-origin: border-box;
@@ -181,6 +185,7 @@ nav > ul > li:hover {
   height: 15px;
   transition: transform 0.2s ease-in-out;
 }
+
 .nav > ul > li:hover > .down-arrow {
   transform: rotate(-180deg);
 }
@@ -194,10 +199,11 @@ nav > ul > li:hover {
   margin-left: 8px;
   text-decoration: none;
   font-weight: 600;
-  font-size: 0.78rem;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  padding: 12px 24px;
   text-transform: capitalize;
   position: relative;
-  padding: 10px 24px;
   border-radius: 1.8rem;
   transition: all 0.3s ease-in-out;
 }
@@ -210,7 +216,6 @@ nav > ul > li:hover {
 .signup {
   color: white;
   background-color: #0070ba;
-  display: none;
 }
 .signup:hover {
   background-color: #005ea6;
@@ -219,6 +224,31 @@ nav > ul > li:hover {
 @media screen and (max-width: 1150px) {
   nav {
     display: none;
+  }
+  .signup {
+    display: none;
+  }
+  .menu-btn {
+    display: flex;
+  }
+  header {
+    height: 55px;
+  }
+  header > div {
+    align-items: center;
+  }
+  .logo {
+    height: 40px;
+  }
+  .logo a {
+    width: 28px;
+    height: 30px;
+    background-size: cover;
+  }
+  .btn > a {
+    font-size: 0.78rem;
+    padding: 10px 24px;
+    letter-spacing: normal;
   }
 }
 
@@ -742,10 +772,6 @@ ul.footer-nav li:hover {
   .container {
     max-width: 1192px;
   }
-  /* .nav-link {
-    padding: 25px 15px 23px 15px;
-    margin: 0 1px;
-  } */
 }
 
 @media screen and (min-width: 1024px) {
@@ -771,32 +797,5 @@ ul.footer-nav li:hover {
   .container {
     padding: 0;
     max-width: 960px;
-  }
-  header {
-    height: 76px;
-    /* display: block; */
-  }
-  /* nav {
-    display: initial;
-  } */
-  .signup {
-    display: initial;
-  }
-  .menu-btn {
-    display: none;
-    height: 40px;
-  }
-  .logo {
-    height: 55px;
-  }
-  .logo a {
-    width: 136px;
-    height: 46px;
-    background-size: contain;
-  }
-  .btn > a {
-    font-size: 0.8rem;
-    letter-spacing: 1px;
-    padding: 12px 24px;
   }
 }
