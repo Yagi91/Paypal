@@ -19,15 +19,14 @@ This is a Paypal India clone frontpage UI created with HTML, CSS, and Javascript
 - HTML
 - CSS
 - Javascript
-- Bootstrap
-- Font Awesome
+- Google Fonts
 
 ## How to use
 
 1. Clone the repository
 2. Open the project in your favorite text editor or IDE
 3. Use run using `live-server`
-4. Open `localhost:3000` in your browser to view the project
+4. Open `localhost:5500` in your browser to view the project
 
 ## Contributing
 
