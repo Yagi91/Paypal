@@ -41,7 +41,7 @@ body {
   margin: 0 auto;
 }
 
-/* Header */
+/* HEADER */
 
 header {
   background-color: #fff;
@@ -248,8 +248,9 @@ nav > ul > li:hover {
   }
 }
 
-/* Main*/
-/* Hero Section */
+/* MAIN*/
+
+/* HERO SECTION */
 
 .hero {
   width: 100%;
@@ -366,7 +367,7 @@ nav > ul > li:hover {
   }
 }
 
-/* banner section */
+/* BANNER SECTION */
 
 .banner {
   font-family: PayPalSansBigLight, Arial, sans-serif;
@@ -385,7 +386,7 @@ nav > ul > li:hover {
   line-height: 1.2;
 }
 
-/* Editorial */
+/* EDITORIAL */
 .editorial-section {
   background-color: #fff;
   padding: 50px 0;
@@ -469,7 +470,7 @@ nav > ul > li:hover {
   }
 }
 
-/* Module Tree */
+/* MODULE TREE */
 
 .module-tree {
   background-color: #fff;
@@ -507,7 +508,7 @@ nav > ul > li:hover {
   }
 }
 
-/* Pullout */
+/* PULLOUT */
 
 .pullout {
   background-color: #00a8ea;
@@ -541,7 +542,7 @@ nav > ul > li:hover {
   font-family: PayPalSansSmall, Arial, sans-serif;
 }
 
-/* Clock */
+/* CLOCK */
 
 .clock {
   width: 100%;
@@ -549,7 +550,7 @@ nav > ul > li:hover {
   background-color: #00a8ea;
 }
 
-/* Terms & Conditions */
+/* TERMS & CONDITIONS */
 .disclosure {
   background-color: #fff;
   margin: 40px auto;
@@ -562,6 +563,7 @@ nav > ul > li:hover {
 }
 
 /* FOOTER */
+
 /* Footer Nav */
 .footer-nav_container {
   padding: 10px 0;
