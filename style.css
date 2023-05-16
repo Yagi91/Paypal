@@ -154,7 +154,7 @@ nav > ul {
   list-style: none;
 }
 nav > ul > li {
-  padding: 1px 15px 10px 15px;
+  padding: 1px 15px 16px 15px;
   display: flex;
   justify-content: center;
   align-items: center;
